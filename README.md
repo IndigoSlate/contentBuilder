@@ -9,4 +9,7 @@ When included on the page, this plugin creates a very simple 'cB' api in the glo
 	'set' : This property is a function that will update the both the cB.content object and the content that is displayed on the page.
 
 To bind these values to your html elements, simply attach an 'isbind' attribute and set it's value to the name of the content variable you want to bind it to.
-ex. <p isbind="content-name"></p>
+	ex. 
+		<p isbind="content-name"></p>
+		
+If a value is bound to an input or text area tag, then it will update automatically on change of that element.
