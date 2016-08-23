@@ -1,5 +1,5 @@
 #Content Builder
-This is a very simple package to let the text content for a page be managed from a singular content file instead of directly in the html. The goal is to increase readability and maintainability in both the HTML and the content of the site itself. This package also allows the same content to be bound to multiple elements. 
+This is a very simple package to let the text content for a page be managed from a singular content file instead of directly in the html. The goal is to increase readability and maintainability in both the HTML and the content of the site itself. This package also allows the same content to be bound to multiple elements, and will automatically update content that is attached to input or text area tags, on change of those elements. 
 
 ###REFERENCE
 
@@ -13,5 +13,3 @@ To bind these values to your html elements, simply attach an 'isbind' attribute 
 
 ex. 	
 	`<p isbind="content-name"></p>`
-
-If a value is bound to an input or text area tag, then it will update automatically on change of that element.
