@@ -20,14 +20,16 @@ function ContentBuilder(){
 		var selector = "[isbind="+key+"]";
 		var elements = document.querySelectorAll(selector);
 		if(elements.length){
-			elements.forEach(function(el){
-				el.innerHTML = val;
+			for(i=0;i<elements.length;i++){
+				var el = elements[i];
 				if(el.nodeName==='INPUT'||el.nodeName==='TEXTAREA'){
 					el.value = val;
 					el.oninput = update;
+				}else{
+					el.innerHTML = val;
 				}
-			});
-		}
+			};
+		};
 	};
 	function update(e){
 		var updater = {},
