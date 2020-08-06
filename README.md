@@ -1,3 +1,4 @@
+# Exported to Azure DevOps 8/6/2020
 #Content Builder
 This is a very simple package to let the text content for a page be managed from a singular content file instead of directly in the html. The goal is to increase readability and maintainability in both the HTML and the content of the site itself. This package also allows the same content to be bound to multiple elements, and will dynamically update content that is attached to input or text area tags.
 
